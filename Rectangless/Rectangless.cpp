@@ -1,6 +1,5 @@
-// Rectangless.cpp : This file contains the 'main' function. Program execution
-// begins and ends there.
-//
+// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
 
 #include "Rectangle.h"
 #include <iostream>
