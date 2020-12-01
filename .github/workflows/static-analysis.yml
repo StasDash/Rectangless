@@ -39,6 +39,6 @@ jobs:
           pvs-studio-analyzer credentials "PVS-Studio Free" FREE-FREE-FREE-FREE
           pvs-studio-analyzer trace -- make WITH_EXTRA_WARNINGS=1
           pvs-studio-analyzer analyze -o pvs-studio.log --disableLicenseExpirationCheck
-          plog-converter -a 'GA:1,2;OP:1' -t errorfile -w pvs-studio.log
+          plog-converter -t errorfile pvs-studio.log --cerr -w
           
       - uses: EndBug/add-and-commit@v4
