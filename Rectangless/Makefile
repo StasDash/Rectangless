@@ -11,7 +11,7 @@ OBJS = $(addsuffix .o, $(basename $(notdir $(SOURCES))))
 UNAME_S := $(shell uname -s)
 
 CXXFLAGS += -I$(IMGUI_DIR)
-CXXFLAGS += -g -Wall -Wformat
+CXXFLAGS += -g -Wall -Wformat -std=c++17
 LIBS =
 
 # We use the WITH_EXTRA_WARNINGS flag on our CI setup to eagerly catch zealous warnings
