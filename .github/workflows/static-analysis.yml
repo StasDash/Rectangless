@@ -36,6 +36,7 @@ jobs:
             exit 0
           fi
           cd Rectangless 
+          pvs-studio-analyzer credentials $PVS_STUDIO_LICENSE
           pvs-studio-analyzer trace -- make WITH_EXTRA_WARNINGS=1
-          pvs-studio-analyzer analyze -l ../pvs-studio.lic -o pvs-studio.log --disableLicenseExpirationCheck
+          pvs-studio-analyzer analyze -o pvs-studio.log --disableLicenseExpirationCheck
           plog-converter -a 'GA:1,2;OP:1' -t errorfile -w pvs-studio.log
