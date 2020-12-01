@@ -12,7 +12,8 @@ private:
 
 public:
   Rectangle() = delete;
-  Rectangle(double left = 0, double top = 0, double right = 0, double bottom = 0)
+  Rectangle(double left = 0, double top = 0, double right = 0,
+            double bottom = 0)
       : left(std::min(left, right)), top(std::max(top, bottom)),
         right(std::max(right, left)), bottom(std::min(bottom, top)) {}
 
